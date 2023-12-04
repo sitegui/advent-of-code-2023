@@ -34,7 +34,7 @@ function has_symbol_near(grid, start, length)
         return true
     end
 
-    for k = -1:(length+1)
+    for k = -1:length
         if is_symbol(grid, start + x * k + y) || is_symbol(grid, start + x * k - y)
             return true
         end
